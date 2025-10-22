@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Principios del Enfoque en el Consumidor</title>
+<style>
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #111;
+    background: url('fondo 2 alta.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  /* ----- HEADER ----- */
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 10px 10px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 2.3em;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+
+  .character {
+    width: 130px;
+    height: auto;
+  }
+
+  /* ----- GRID PRINCIPLES ----- */
+  .principles {
+    display: grid;
+    grid-template-areas:
+      "p1 p1"
+      "p2 p3"
+      "p4 p5";
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto 60px;
+  }
+
+  details {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  details:hover {
+    transform: scale(1.02);
+  }
+
+  summary {
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #000;
+    outline: none;
+  }
+
+  details[open] summary {
+    color: #e76f00;
+  }
+
+  p {
+    margin-top: 10px;
+    font-size: 0.95em;
+    color: #333;
+  }
+
+  /* --- Specific positioning for grid items --- */
+  .p1 { grid-area: p1; }
+  .p2 { grid-area: p2; }
+  .p3 { grid-area: p3; }
+  .p4 { grid-area: p4; }
+  .p5 { grid-area: p5; }
+
+  /* ----- Responsive ----- */
+  @media (max-width: 700px) {
+    header {
+      flex-direction: row; /* título y personaje en línea */
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      gap: 12px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    .character {
+      width: 60px;
+    }
+
+    .principles {
+      grid-template-areas:
+        "p1"
+        "p2"
+        "p3"
+        "p4"
+        "p5";
+      grid-template-columns: 1fr;
+      width: 90%;
+    }
+  }
+
+  /* ----- WhatsApp flotante ----- */
+  .whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .whatsapp-float img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.2s;
+  }
+
+  .whatsapp-float:hover img {
+    transform: scale(1.1);
+  }
+
+</style>
+</head>
+<body>
+  <header>
+    <h1>Los 5 Principios del Enfoque<br>en el Consumidor</h1>
+    <img src="tipito megafono derecha.png" alt="Trade character" class="character">
+  </header>
+
+  <section class="principles">
+    <details class="p1">
+      <summary>1. Siempre nos preguntamos: "¿Esto que estamos haciendo/decidiendo le agrega valos al consumidor?"
+        Buscamos ayudar y resolver sus problemas/necesidades.
+      </summary>
+      <div class="subdetails">
+        <details><summary>Comportamientos observables</summary>
+            <p>Tenemos el hábito de hacernos esta preguntar para tomar decisiones.</p>
+        </details>
+        <details><summary>Ejemplos en Akapol</summary>
+            <p>Desde Legales siempre tratamos de ponernos en lugar del consumidor más allá de velar por el cumplimiento de los requisitos legales. Buscamos cuidar que el consumidor siempre tenga información cierta, clara y que no le genere dudas al elegir nuestros productos (ej: Poxipol "resiste 120 °C" "según aplicación" - es suficiente ese disclaimer si como consumidor lo leo?).</p>
+            <p>Desde el equipo de repositores, nos aseguramos tener las góndolas bien armadas y los productos exhibidos de forma correcta utilizando el material POP (punto de venta) disponible (botaderos, exhibidores de pie, etc.). Esto ayuda a que el consumidor encuentre nuestros productos fácilmente.</p>
+            <p>En el caso de las pistolas hotmelt Unipox, buscando que el consumidor nos encuentre fácilmente y nos podamos destacar en el punto de venta, decidimos que el producto llegue al cliente (librero, ferretero) en el mismo momento que el material de punto de venta.</p>
+            <p>Fidelizamos y capacitamos continuamente a: usuarios finales de nuestros productos; recomendadores de nuestras marcas en los puntos de venta (comerciantes); usuarios profesionales (mecánicos, pintores, instaladores sanitarios, plomeros, gasistas, etc.) e instituciones educativas y Centros de Formación Profesional.</p>
+        </details>
+      </div>
+    </details>
+
+    <details class="p2">
+      <summary>2. "Valoramos y utilizamos la voz del consumidor para mejorar constantemente nuestros productos y servicios. Escucha activa y adaptación"
+        </summary>
+      <div class="subdetails">
+        <details><summary>Comportamientos observables</summary>
+            <p>Buscamos activamente información del consumidor para comprender sus necesidades e identificar insights (patrones comunes de comportamiento, motivaciones, necesidades y/o deseos).</p>
+        </details>
+        <details><summary>Ejemplos en Akapol</summary>
+            <p>Desarrollamos la nueva presentación del  Éccole 3g, respondiendo rápidamente a una necesidad de menor desembolso por parte del consumidor (en contexto de crisis económica).</p>
+            <p>En un estudio con consumidores realizado en abril del 2021, se detectó que Poxi-ran no se usaba más frecuentemente porque no era transparente, dentro de las tres principales razones. Por lo tanto, decidimos lanzar la variante de Poxi-ran transparente.</p>
+            <p>Implementamos la modificación del SEC (Servicio de Experiencia del Consumidor) que nos permitió unificar los puntos de contacto del consumidor y obtener así información de primera mano.</p>
+            <p>Involucramos al consumidor en etapas tempranas del desarrollo de nuevos productos para enfocarnos en sus necesidades (por ejemplo: La Gotita Repara Juguetes y Python donde estés).</p>
+        </details>
+      </div>
+    </details>
+
+    <details class="p3">
+      <summary>3. Tomamos las decisiones entendiendo las necesidades del consumidor</summary>
+      <div class="subdetails">
+        <details><summary>Comportamientos observables</summary>
+            <p>Entendiendo las necesidades de los consumidores tomamos las decisiones necesarias en tiempo y forma flexibilizando los procesos que sean necesarios.</p>
+            <p>Promovemos asumir un riesgo tolerable para priorizar flexibilidad y rapidez.</p>
+        </details>
+        <details><summary>Ejemplos en Akapol</summary>
+            <p>Priorizamos la velocidad de llegada al mercado lanzando el Éccole 3 g en la caja de La Gotita Gel sabiendo que una vez abierto no se puede volver a guardar (el conjunto pomo + tapa no entra en el estuche).</p>
+            <p>"El tiempo de llegada de un producto importado ponía en riesgo cumplir con la fecha de lanzamiento de Pistolas Hotmelt en la Expo Hobby, entonces se decidió traer la mercadería en avión, asumiendo un costo más elevado.
+                Por otro lado, en esa fecha se suspendió la actividad de Planta, excepto almacenes, control de calidad y expedición, para asegurar la recepción y posterior entrega de las pistolas, asegurando así la fecha de lanzamiento."</p>
+            <p>Flexibilizamos la firma de los compromisos de confidencialidad para potenciales proveedores y contratos con influencers, admitiendo la firma electrónica (menor solidez legal respecto de la firma de puño y letra), lo cual se tradujo en optimización de tiempos de contratación.</p>
+            <p>Se diseñó y desarrolló una plataforma web ágil y accesible para distribuidores, adaptada a sus necesidades, que agilizó la carga de pedidos al permitirles gestionar los mismos de forma flexible y desde cualquier dispositivo, optimizando así la disponibilidad de productos para la venta.</p>
+            <p>La implementación de Voligoma edición limitada fue un ejemplo de cómo la Planta puede adaptarse rápidamente a las necesidades del mercado, trabajando en equipo y con un enfoque claro en el consumidor.</p>
+        </details>
+      </div>
+    </details>
+
+    <details class="4">
+      <summary>4. Promovemos la experimentación en el mercado para el aprendizaje temprano</summary>
+      <div class="subdetails">
+        <details><summary>Comportamientos observables</summary>
+            <p>Probamos a pequeñas escalas las nuevas propuestas para aprender, corregir y luego escalar las soluciones.</p>
+            <p>Adaptamos y flexibilizamos procesos para llevar a cabo la experimentación en tiempo y forma.</p>
+            <p>Promovemos la generación de los acuerdos necesarios para realizar la experimentación.</p>
+        </details>
+        <details><summary>Ejemplos en Akapol</summary>
+            <p>Hicimos un experimento con Cola de Carpintero Poxi-ran en 120 ferreterías (mercado de prueba) con el objetivo de validar la viabilidad de una propuesta de negocio de este tipo en nuestra cadena comercial nacional.</p>
+            <p>Trabajamos en un experimento de innovación (La Gotita Repara Juguetes) en el marco del "Proyecto Pega Plásticos" que consistió en vender el producto desarrollado hasta ese momento para medir el interés en los consumidores en esta categoría. </p>
+            <p>Desde el SEC junto a I+D, desarrollamos la web de ayuda y consulta "comolopego.com.ar", que consiste en guiar al consumidor para el uso de nuestros productos. La promocionamos en los botaderos de AMBA con un sticker, consistiendo en una prueba económica y rápida para medir el interés en este tipo de soluciones o acercamientos al consumidor.</p>
+        </details>
+      </div>
+    </details>
+    <details class="p5">
+      <summary>5. Entendemos cómo nuestras acciones contribuyen a satisfacer a nuestros consumidores </summary>
+      <div class="subdetails">
+        <details><summary>Comportamientos observables</summary>
+            <p>En áreas cuyas acciones tienen impacto directo en el consumidor, el mismo debe ser medible.</p>
+            <p>En áreas cuyas acciones no impactan directamente en el consumidor, sus acciones tienen que tener un impacto medible en las áreas que sí lo tienen (tiempo, dinero, etc…).</p>
+        </details>
+        <details><summary>Ejemplos en Akapol</summary>
+            <p>El lanzamiento de Éccole 3 g incluyó el desarrollo de nuevos canales de venta (ejemplo: quioscos) para acercarnos al consumidor.</p>
+            <p>Colaboramos en el diseño de soluciones tecnológicas que acompañen la aceleración y simplificación de procesos.</p>
+            <p>La implementación de programas de bienestar y reconocimiento a los colaboradores en la Empresa logra que se sientan valorados y comprometidos, y en consecuencia mejor enfocados en las acciones que contribuyen a satisfacer a nuestros consumidores. </p>
+            <p>En Zelaya buscamos visibilizar defectos de calidad de productos para aprender de ellos y tenerlos siempre presentes, de forma tal de no repetirlos. Para ello, se instaló una vidriera que muestra algunos de los problemas más comunes (ejemplificando con productos reales) encontrados en Producción.</p>
+            <p>Siempre buscamos mejorar la eficiencia de los procesos  y los costos de los insumos para bajar el costo operativo, generando recursos para mejorar la experiencia al consumidor.</p>
+        </details>
+      </div>
+    </details>
+  </section>
+  <a href="https://wa.me/15557565996" class="whatsapp-float" target="_blank">
+  <div class="whatsapp-text">Mandanos tu ejemplo o comentarios!</div>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<style>
+/* Contenedor general */
+.whatsapp-float {
+  position: fixed;
+  bottom: 80px; /* antes era 20px, subimos todo el bloque */
+  right: 20px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none; /* sin subrayado */
+}
+
+/* Texto visible arriba del ícono */
+.whatsapp-text {
+  color: #fff; /* texto blanco */
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 8px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4); /* fondo sutil para contraste */
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+
+/* Ícono de WhatsApp */
+.whatsapp-float img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: white;
+  padding: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-float:hover img {
+  transform: scale(1.1);
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 700px) {
+  .whatsapp-float {
+    bottom: 70px; /* un poco más bajo en mobile */
+    right: 15px;
+  }
+
+  .whatsapp-text {
+    font-size: 12px;
+    padding: 5px 8px;
+    margin-bottom: 6px;
+  }
+}
+</style>
+</body>
+</html>
+
